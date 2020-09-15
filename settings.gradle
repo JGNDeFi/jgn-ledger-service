@@ -1,0 +1,4 @@
+rootProject.name = 'ledgerservice'
+include 'workflows'
+include 'contracts'
+include 'clients'

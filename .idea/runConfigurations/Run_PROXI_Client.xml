@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run JGN Client" type="Application" factoryName="Application" singleton="true">
+    <option name="MAIN_CLASS_NAME" value="org.jgn.ClientKt" />
+    <module name="ledgerservice.clients.main" />
+    <option name="PROGRAM_PARAMETERS" value="localhost:10005 user1 test" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>TransferAssetFlow.Initiator - ledgerservice</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">ledgerservice</a>&nbsp;/&nbsp;<a href="../../index.html">org.jgn.flows</a>&nbsp;/&nbsp;<a href="../index.html">TransferAssetFlow</a>&nbsp;/&nbsp;<a href="./index.html">Initiator</a><br/>
+<br/>
+<h1>Initiator</h1>
+(JVM) <code><span class="identifier">@StartableByRPC</span> <span class="identifier">@StartableByService</span> <span class="identifier">@InitiatingFlow</span> <span class="keyword">class </span><span class="identifier">Initiator</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FlowLogic</span><span class="symbol">&lt;</span><span class="identifier">SignedTransaction</span><span class="symbol">&gt;</span></code>
+<p>TransferAssetFlow</p>
+<h3>Parameters</h3>
+<p><a name="amount"></a>
+<code>amount</code> - The value of amount</p>
+<p><a name="symbol"></a>
+<code>symbol</code> - The symbol of the currency</p>
+<p><a name="senderId"></a>
+<code>senderId</code> - The senderID</p>
+<p><a name="recipientId"></a>
+<code>recipientId</code> - The recipientId</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-f-i-n-a-l-i-s-i-n-g_-t-r-a-n-s-a-c-t-i-o-n/index.html">FINALISING_TRANSACTION</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">FINALISING_TRANSACTION</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Step</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-g-a-t-h-e-r-i-n-g_-s-i-g-s/index.html">GATHERING_SIGS</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">GATHERING_SIGS</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Step</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-g-e-n-e-r-a-t-i-n-g_-t-r-a-n-s-a-c-t-i-o-n.html">GENERATING_TRANSACTION</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">GENERATING_TRANSACTION</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Step</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-s-i-g-n-i-n-g_-t-r-a-n-s-a-c-t-i-o-n.html">SIGNING_TRANSACTION</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">SIGNING_TRANSACTION</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Step</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-v-e-r-i-f-y-i-n-g_-t-r-a-n-s-a-c-t-i-o-n.html">VERIFYING_TRANSACTION</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">VERIFYING_TRANSACTION</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Step</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>TransferAssetFlow</p>
+<code><span class="identifier">Initiator</span><span class="symbol">(</span><span class="identifier" id="org.jgn.flows.TransferAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.flows.TransferAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/symbol">symbol</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.flows.TransferAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/senderId">senderId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.flows.TransferAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String, kotlin.String, kotlin.String)/recipientId">recipientId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="progress-tracker.html">progressTracker</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">progressTracker</span><span class="symbol">: </span><span class="identifier">ProgressTracker</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="call.html">call</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">call</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">SignedTransaction</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="tracker.html">tracker</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">tracker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ProgressTracker</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

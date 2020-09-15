@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NodeRPCConnection - ledgerservice</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">ledgerservice</a>&nbsp;/&nbsp;<a href="../index.html">org.jgn.webserver</a>&nbsp;/&nbsp;<a href="./index.html">NodeRPCConnection</a><br/>
+<br/>
+<h1>NodeRPCConnection</h1>
+(JVM) <code><span class="identifier">@Component</span> <span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">NodeRPCConnection</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/AutoCloseable.html"><span class="identifier">AutoCloseable</span></a></code>
+<p>Wraps an RPC connection to a Corda node.</p>
+<p>The RPC connection is configured using command line arguments.</p>
+<h3>Parameters</h3>
+<p><a name="host"></a>
+<code>host</code> - The host of the node we are connecting to.</p>
+<p><a name="rpcPort"></a>
+<code>rpcPort</code> - The RPC port of the node we are connecting to.</p>
+<p><a name="username"></a>
+<code>username</code> - The username for logging into the RPC client.</p>
+<p><a name="password"></a>
+<code>password</code> - The password for logging into the RPC client.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Wraps an RPC connection to a Corda node.</p>
+<code><span class="identifier">NodeRPCConnection</span><span class="symbol">(</span><span class="identifier" id="org.jgn.webserver.NodeRPCConnection$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/host">host</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.webserver.NodeRPCConnection$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/username">username</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.webserver.NodeRPCConnection$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/password">password</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.webserver.NodeRPCConnection$<init>(kotlin.String, kotlin.String, kotlin.String, kotlin.Int)/rpcPort">rpcPort</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="proxy.html">proxy</a></h4>
+</td>
+<td>
+<p>The RPC proxy.</p>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">proxy</span><span class="symbol">: </span><span class="identifier">CordaRPCOps</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="rpc-connection.html">rpcConnection</a></h4>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">rpcConnection</span><span class="symbol">: </span><span class="identifier">CordaRPCConnection</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="close.html">close</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">close</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="initialise-node-r-p-c-connection.html">initialiseNodeRPCConnection</a></h4>
+</td>
+<td>
+<p>Initializes the RPC COnnection</p>
+<code><span class="keyword">fun </span><span class="identifier">initialiseNodeRPCConnection</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

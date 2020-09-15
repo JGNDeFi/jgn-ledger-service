@@ -1,0 +1,97 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IssueAssetFlow.Initiator - ledgerservice</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">ledgerservice</a>&nbsp;/&nbsp;<a href="../../index.html">org.jgn.flows</a>&nbsp;/&nbsp;<a href="../index.html">IssueAssetFlow</a>&nbsp;/&nbsp;<a href="./index.html">Initiator</a><br/>
+<br/>
+<h1>Initiator</h1>
+(JVM) <code><span class="identifier">@StartableByRPC</span> <span class="keyword">class </span><span class="identifier">Initiator</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FlowLogic</span><span class="symbol">&lt;</span><span class="identifier">StateAndRef</span><span class="symbol">&lt;</span><a href="../../../org.jgn.contracts/-asset-state/index.html"><span class="identifier">AssetState</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Initiator Class for IssueAssetFlow</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-f-i-n-a-l-i-s-i-n-g_-t-r-a-n-s-a-c-t-i-o-n/index.html">FINALISING_TRANSACTION</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">FINALISING_TRANSACTION</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Step</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-g-e-n-e-r-a-t-i-n-g_-t-r-a-n-s-a-c-t-i-o-n.html">GENERATING_TRANSACTION</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">GENERATING_TRANSACTION</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Step</span></code></td>
+</tr>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-s-i-g-n-i-n-g_-t-r-a-n-s-a-c-t-i-o-n.html">SIGNING_TRANSACTION</a></h4>
+</td>
+<td>
+<code><span class="keyword">object </span><span class="identifier">SIGNING_TRANSACTION</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Step</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Initiator</span><span class="symbol">(</span><span class="identifier" id="org.jgn.flows.IssueAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.flows.IssueAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String)/symbol">symbol</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code>
+<p>Initiator Class for IssueAssetFlow</p>
+<code><span class="identifier">Initiator</span><span class="symbol">(</span><span class="identifier" id="org.jgn.flows.IssueAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String, java.util.UUID)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.flows.IssueAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String, java.util.UUID)/symbol">symbol</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="org.jgn.flows.IssueAssetFlow.Initiator$<init>(kotlin.Int, kotlin.String, java.util.UUID)/uuid">uuid</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/UUID.html"><span class="identifier">UUID</span></a>&nbsp;<span class="symbol">=</span>&nbsp;UUID.randomUUID()<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="progress-tracker.html">progressTracker</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">progressTracker</span><span class="symbol">: </span><span class="identifier">ProgressTracker</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="call.html">call</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">call</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">StateAndRef</span><span class="symbol">&lt;</span><a href="../../../org.jgn.contracts/-asset-state/index.html"><span class="identifier">AssetState</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+(JVM) 
+<h4><a href="tracker.html">tracker</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">tracker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">ProgressTracker</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
